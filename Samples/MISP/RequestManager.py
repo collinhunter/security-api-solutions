@@ -118,9 +118,9 @@ class RequestManager:
         #print(f"total indicators sent:          {str(self._get_total_indicators_sent()).rjust(self.RJUST)}")
         #print(f"total response success:         {str(self.success_count).rjust(self.RJUST)}")
         #print(f"total response error:           {str(self.error_count).rjust(self.RJUST)}\n")
-        cur_batch_took = self._get_timestamp() - self.last_batch_done_timestamp
-        self.last_batch_done_timestamp = self._get_timestamp()
-        print(f'current batch took:   {round(cur_batch_took, 2):{6}} seconds')
+        ##cur_batch_took = self._get_timestamp() - self.last_batch_done_timestamp
+        ##self.last_batch_done_timestamp = self._get_timestamp()
+        ##print(f'current batch took:   {round(cur_batch_took, 2):{6}} seconds')
         # avg_speed = self._get_total_indicators_sent() / (self.last_batch_done_timestamp - self.start_time)
         # print(f'average speed so far: {round(avg_speed, 2):{6}} indicators per second')
         # time_left = (self.total_indicators - self._get_total_indicators_sent()) / avg_speed
